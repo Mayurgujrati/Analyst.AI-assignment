@@ -1,0 +1,70 @@
+.modals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.contents {
+  background: #f0f0f0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 5, 0, 5);
+  border-radius: 8px;
+  max-width: 80%; /* Adjust the maximum width as needed */
+  color: #333;
+  font-size: 1rem;
+  transition: font-size 0.3s;
+  font-weight: bolder;
+}
+
+/* Styling for the two columns */
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 10px;
+}
+.column .p {
+  font-weight: bold;
+}
+.heading {
+  font-weight: bolder;
+}
+
+.button {
+  margin-top: 12px;
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #135ca9;
+}
+
+/* Media query for smaller screens (e.g., mobile) */
+@media screen and (max-width: 768px) {
+  .contents {
+    max-width: 90%;
+  }
+
+  .column {
+    margin: 0;
+    padding: 10px;
+  }
+}
